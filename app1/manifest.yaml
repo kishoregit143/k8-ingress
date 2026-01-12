@@ -53,6 +53,7 @@ metadata:
     alb.ingress.kubernetes.io/certificate-arn: "here wehave to put certificate arn"
     alb.ingress.kubernetes.io/sccheme: internet-facing
     alb.ingress.kubernetes.io/tags: Environment=dev,Project=roboshop
+    alb.ingress.kubernetes.io/target-type: ip
 spec:
   ingressClassName: alb 
   rules:

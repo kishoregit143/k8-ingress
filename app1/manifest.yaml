@@ -51,7 +51,10 @@ metadata:
   annotations:
     alb.ingress.kubernetes.io/listener-ssl-ports: "443" 
     alb.ingress.kubernetes.io/certificate-arn: "here wehave to put certificate arn"
+    alb.ingress.kubernetes.io/sccheme: internet-facing
+    alb.ingress.kubernetes.io/tags: Environment=dev,Project=roboshop
 spec:
+  ingressClassName: alb 
   rules:
   - host: "app1.daws-86s.devops86s.com"
     http:
